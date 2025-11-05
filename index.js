@@ -269,7 +269,6 @@ app.get('/min_garantias', (req, res) => {
 
 app.get("/", (_req, res) => res.json({ ok: true }));
 
-export default app;
 
 // ini_acoes_cliente - post
 // ini_anexos - post
