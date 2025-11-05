@@ -266,6 +266,11 @@ app.get('/min_garantias', (req, res) => {
     })
 })
 
+
+app.get("/", (_req, res) => res.json({ ok: true }));
+
+export default app;
+
 // ini_acoes_cliente - post
 // ini_anexos - post
 // ini_contratos - post
@@ -277,10 +282,10 @@ app.get('/min_garantias', (req, res) => {
 //     console.log(`Server running on port ${port}`);
 // });
 
-https.createServer({
-    key: fs.readFileSync('server.key'),
-    cert: fs.readFileSync('server.cert')
-  }, app)
-  .listen(port, function () {
-    console.log('Example app listening on port ' + port + '! Go to https://localhost:' + port + '/')
-  })
+// https.createServer({
+//     key: fs.readFileSync('server.key'),
+//     cert: fs.readFileSync('server.cert')
+//   }, app)
+//   .listen(port, function () {
+//     console.log('Example app listening on port ' + port + '! Go to https://localhost:' + port + '/')
+//   })
