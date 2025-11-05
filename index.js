@@ -44,6 +44,7 @@ app.get('/ini_juizos', (req, res) => {
     });
 });
 
+
 app.get('/ini_acao', (req, res) => {
     db = connect();
     const query = 'SELECT * FROM ini_acao';
