@@ -5,7 +5,7 @@ const https = require('https')
 var fs = require('fs')
 
 const app = express();
-const port = 4000;
+const port = 3005;
 
 app.use(cors());
 app.use(express.json());
@@ -284,6 +284,3 @@ https.createServer({
   .listen(port, function () {
     console.log('Example app listening on port ' + port + '! Go to https://localhost:' + port + '/')
   })
-
-
-module.exports = app;
